@@ -33,3 +33,22 @@
 | brand | varchar(255) | the brand of the car | Not Null |
 | model | varchar(255) | the model of the car | Not Null |
 | owner | integer | the owner of the car | Not Null |
+
+## Movie
+
+| Attribute | Data Type | Description | Constraints |
+| --- | --- | --- | --- |
+| movie_id | serial | unique identifier of the movie | Primary Key |
+| category_ id | integer | id of the movie's category | Foreign Key, Not Null |
+| title | varchar(255) | name of the movie | Not Null |
+| duration | integer | duration of the movie | Not Null |
+| dub_language | varchar(255) | language that is voiced over in the movie | Not Null |
+| sub_language | varchar(255) | language that is subtitled under the screen in the movie | Not Null |
+
+## Customer
+
+| Attribute | Data Type | Description | Constraints |
+| --- | --- | --- | --- |
+| customer_id | serial | unique identifier of the customer | Primary Key |
+| firstname | varchar(255) | firstname of the customer | Not Null |
+| surname | varchar(255) | surname of the customer | Not Null |
